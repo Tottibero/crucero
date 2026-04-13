@@ -12,14 +12,246 @@ import Collapsible from '../components/Collapsible.astro';
     date="Viernes 8 de mayo · Día 5"
     arrival="08:00"
     departure="19:00"
-    note="11 horas en puerto · Puerto: Civitavecchia (~80km de Roma)"
+    note="11 horas en puerto · Civitavecchia a ~80km de Roma · Tren ~1h 15min"
     gradient="linear-gradient(135deg, #d4a017 0%, #9c6400 100%)"
   />
 
-  <Collapsible title="Planes generales" emoji="🗺️" />
-  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧" />
-  <Collapsible title="Free tours" emoji="🚶" />
-  <Collapsible title="Transporte desde el puerto" emoji="🚌" />
-  <Collapsible title="Restaurantes" emoji="🍽️" />
-  <Collapsible title="Consejos prácticos" emoji="ℹ️" />
+  <Collapsible title="Planes generales" emoji="🗺️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Fontana di Trevi <a class="maps-link" href="https://maps.google.com/?q=Fontana+di+Trevi,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La fuente más famosa del mundo. Llega a primera hora para evitar la aglomeración. Reserva anticipada obligatoria (~3€) para acceder a la zona. Compra el ticket en el sitio oficial antes de ir.</div>
+        <div class="plan-tags">
+          <span class="tag">Reserva obligatoria ~3€</span>
+          <span class="tag">Mejor a primera hora</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Panteón de Agripa <a class="maps-link" href="https://maps.google.com/?q=Pantheon,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El edificio mejor conservado de la antigüedad romana, con 2.000 años de historia. Entrada ~5€. Reserva online recomendada para no perder tiempo en cola.</div>
+        <div class="plan-tags">
+          <span class="tag">~5€ entrada</span>
+          <span class="tag">Reserva online</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Piazza Navona <a class="maps-link" href="https://maps.google.com/?q=Piazza+Navona,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Una de las plazas más bellas de Roma. Tres fuentes barrocas de Bernini, artistas callejeros y cafeterías con terraza. Muy cerca del Panteón, perfecta para combinar.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Coliseo y Foro Romano <a class="maps-link" href="https://maps.google.com/?q=Colosseo,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El símbolo de Roma. Reserva la entrada online con mucha antelación (~18€ Coliseo + Foro). Sin reserva es casi imposible entrar el mismo día. Calcula 2–3 horas para ambos.</div>
+        <div class="plan-tags">
+          <span class="tag">~18€ Coliseo + Foro</span>
+          <span class="tag">Reserva con semanas de antelación</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Barrio de Trastevere <a class="maps-link" href="https://maps.google.com/?q=Trastevere,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El barrio más auténtico y fotogénico de Roma. Callejuelas medievales, hiedra en las fachadas, buganvillas y las mejores trattorias de la ciudad. Ideal para comer y pasear.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Ciudad del Vaticano <a class="maps-link" href="https://maps.google.com/?q=Citta+del+Vaticano,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Basílica de San Pedro (entrada gratuita), Plaza de San Pedro y los Museos Vaticanos con la Capilla Sixtina. Los museos requieren reserva online ~20€. Sin reserva la cola puede ser de 2–3 horas.</div>
+        <div class="plan-tags">
+          <span class="tag">Basílica gratis</span>
+          <span class="tag">Museos ~20€ · Reserva obligatoria</span>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Con 11 horas</strong> es el día con más margen. Una ruta realista: tren a Roma (llega ~10:30) → Fontana di Trevi → Panteón → Piazza Navona → comer en Trastevere → Coliseo o Vaticano → tren de vuelta antes de las 17:00.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Coliseo <a class="maps-link" href="https://maps.google.com/?q=Colosseo,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Los niños quedan impresionados por el tamaño y la historia de los gladiadores. Reserva la entrada con antelación para no perder tiempo en cola (~18€ incluye el Foro Romano).</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Fontana di Trevi <a class="maps-link" href="https://maps.google.com/?q=Fontana+di+Trevi,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Tirar una moneda y pedir un deseo siempre es un momentazo con niños. Llega temprano para que puedan acercarse sin agobios de multitudes.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Piazza Navona <a class="maps-link" href="https://maps.google.com/?q=Piazza+Navona,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Amplia y abierta, perfecta para que los niños corran un poco. Los artistas callejeros y las fuentes de Bernini los entretienen. Buen sitio para helado y descanso.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Castel Sant'Angelo <a class="maps-link" href="https://maps.google.com/?q=Castel+Sant%27Angelo,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Antiguo mausoleo imperial convertido en fortaleza papal. A los niños les parece un castillo de verdad. Vistas espectaculares del Tíber y la ciudad desde arriba. Entrada ~15€.</div>
+        <div class="plan-tags">
+          <span class="tag">~15€ entrada</span>
+        </div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Free tours" emoji="🚶">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Free Tour Centro Histórico</div>
+        <div class="plan-desc">Recorre la Roma barroca: Fontana di Trevi, Panteón, Piazza Navona y el Campo de' Fiori. Guías locales en español con propina voluntaria. Duración ~2 horas.</div>
+        <div class="plan-tags">
+          <span class="tag">Punto de encuentro: Piazza della Repubblica o Plaza de España</span>
+          <span class="tag">~2 horas</span>
+          <span class="tag">En español</span>
+        </div>
+        <a href="https://www.guruwalk.com/rome" class="plan-link" target="_blank">guruwalk.com/rome →</a>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Importante:</strong> Teniendo en cuenta el tren de Civitavecchia (~1h 15min), llegarás a Roma sobre las 10:00–10:30. El free tour encaja bien a las 11:00 y te deja libre para comer y ver el Coliseo por la tarde. Reserva con antelación, los días de crucero se llenan.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Transporte desde el puerto" emoji="🚌">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Tren Civitavecchia → Roma Termini</div>
+        <div class="plan-desc">La opción más cómoda y barata. Salen trenes cada 30 min desde la estación de Civitavecchia, a 10 min a pie del puerto. Línea FL5, llegada a Roma Termini en ~1h 15min.</div>
+        <div class="plan-tags">
+          <span class="tag">~5€ ida · ~10€ ida y vuelta</span>
+          <span class="tag">Cada 30 min</span>
+          <span class="tag">~1h 15min de trayecto</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Shuttle del puerto</div>
+        <div class="plan-desc">La terminal de cruceros ofrece shuttle hasta la estación de tren de Civitavecchia. Conveniente si no se quiere andar los 10 min. Consulta horarios en el barco.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Bus organizado desde el puerto</div>
+        <div class="plan-desc">Hay operadores que ofrecen bus directo Puerto → Roma (sin transbordos) por ~25–35€ ida y vuelta. Más caro que el tren pero sin cambios. Útil si se va con niños pequeños o mayores.</div>
+        <div class="plan-tags">
+          <span class="tag">~25–35€ ida y vuelta</span>
+          <span class="tag">Sin transbordos</span>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Hora límite:</strong> Para coger el tren de vuelta con margen, sal de Roma Termini antes de las 17:00. Llegarás a Civitavecchia sobre las 18:15, de vuelta al barco antes de las 19:00.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Restaurantes" emoji="🍽️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Da Enzo al 29 (Trastevere) <a class="maps-link" href="https://maps.google.com/?q=Da+Enzo+al+29,+Trastevere,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Una de las mejores trattorias romanas. Cocina tradicional con cacio e pepe, coda alla vaccinara y carciofi alla romana. Reserva imprescindible, es pequeño y muy solicitado.</div>
+        <div class="plan-tags">
+          <span class="tag">Trastevere</span>
+          <span class="tag">~25–35€/persona</span>
+          <span class="tag">Reserva necesaria</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Osteria dell'Angelo <a class="maps-link" href="https://maps.google.com/?q=Osteria+dell%27Angelo,+Roma" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Junto al Vaticano, cocina romana clásica y honesta. Famosa por sus bucatini all'amatriciana. Menú completo ~20€. Solo abre a mediodía de lunes a viernes.</div>
+        <div class="plan-tags">
+          <span class="tag">Zona Vaticano</span>
+          <span class="tag">~20€ menú</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Supplì Roma <a class="maps-link" href="https://maps.google.com/?q=Suppl%C3%AC+Roma,+Trastevere" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Para comer rápido y barato: los supplì son las croquetas de arroz romanas, fritas y con mozzarella dentro. ~2€ la pieza. Perfectas para seguir caminando sin parar.</div>
+        <div class="plan-tags">
+          <span class="tag">Street food</span>
+          <span class="tag">~2€/pieza</span>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Platos típicos:</strong> Cacio e pepe, carbonara, amatriciana, gricia (las 4 pastas romanas), carciofi alla romana, coda alla vaccinara (rabo de toro), gelato artesano y supplì.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Consejos prácticos" emoji="ℹ️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Reservas online — imprescindible</div>
+        <div class="plan-desc">Coliseo, Museos Vaticanos y Fontana di Trevi requieren reserva previa. Sin ella perderás horas en cola o directamente no podrás entrar. Hazlo con semanas de antelación.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Horario de vuelta al barco</div>
+        <div class="plan-desc">Salida a las 19:00. Sal de Roma Termini antes de las 17:00 para llegar al puerto con margen. El tren tarda ~1h 15min.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Qué comprar</div>
+        <div class="plan-desc">Pasta artesana, aceite de oliva DOP, vino Frascati (DO local), pasta alla gricia en bote, libros y láminas de arte en las tiendas de los museos.</div>
+      </div>
+    </div>
+  </Collapsible>
 </Layout>
+
+<style>
+  .plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding-top: 0.5rem;
+  }
+  .plan-item {
+    border-left: 3px solid var(--color-teal-light);
+    padding-left: 0.875rem;
+  }
+  .plan-name {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: var(--color-navy);
+    margin-bottom: 0.25rem;
+  }
+  .plan-desc {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    line-height: 1.55;
+  }
+  .plan-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-top: 0.375rem;
+  }
+  .tag {
+    background: var(--color-gray-100);
+    color: var(--color-gray-600);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+  .plan-link {
+    display: inline-block;
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    text-decoration: underline;
+  }
+  .tip-box {
+    background: var(--color-sand);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--color-gray-800);
+    margin-top: 0.875rem;
+    line-height: 1.55;
+  }
+  .tip-box strong {
+    color: var(--color-navy);
+  }
+  .maps-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    background: #e0f7fd;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.375rem;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+</style>

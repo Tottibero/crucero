@@ -12,14 +12,233 @@ import Collapsible from '../components/Collapsible.astro';
     date="Domingo 10 de mayo · Día 7"
     arrival="09:00"
     departure="18:00"
-    note="9 horas en puerto · Puerto: Vieux-Port de Marseille"
+    note="9 horas en puerto · Puerto: Joliette, junto al Vieux-Port"
     gradient="linear-gradient(135deg, #2980b9 0%, #1a5276 100%)"
   />
 
-  <Collapsible title="Planes generales" emoji="🗺️" />
-  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧" />
-  <Collapsible title="Free tours" emoji="🚶" />
-  <Collapsible title="Transporte desde el puerto" emoji="🚌" />
-  <Collapsible title="Restaurantes" emoji="🥐" />
-  <Collapsible title="Consejos prácticos" emoji="ℹ️" />
+  <Collapsible title="Planes generales" emoji="🗺️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Vieux-Port <a class="maps-link" href="https://maps.google.com/?q=Vieux-Port,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El corazón de Marsella. Puerto pesquero milenario rodeado de bares, restaurantes y el mercado de pescado matutino. El espejo de acero de Foster (L'Ombrière) refleja toda la vida del puerto. Punto de partida ideal para la jornada.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Basílica de Notre-Dame de la Garde <a class="maps-link" href="https://maps.google.com/?q=Basilique+Notre-Dame+de+la+Garde,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">"La Bonne Mère", el símbolo de Marsella. Basílica neobizantina en lo alto de una colina con vistas de 360° sobre la ciudad, el mar y las islas. Entrada gratuita. Subida a pie (~30 min) o en bus turístico.</div>
+        <div class="plan-tags">
+          <span class="tag">Entrada gratuita</span>
+          <span class="tag">Subida a pie ~30min o bus turístico</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Le Panier <a class="maps-link" href="https://maps.google.com/?q=Le+Panier,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El barrio más antiguo de Marsella (~2.600 años). Callejuelas con graffitis de artistas, tiendas de jabón de Marsella y cafés con terraza. Muy parecido a un barrio árabe-mediterráneo mezclado. A 10 min a pie del Vieux-Port.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">MuCEM <a class="maps-link" href="https://maps.google.com/?q=MuCEM,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Museo de Civilizaciones de Europa y el Mediterráneo. Arquitectura espectacular de Rudy Ricciotti sobre el mar. Incluso si no se entra, la pasarela exterior sobre el agua y las vistas son gratuitas.</div>
+        <div class="plan-tags">
+          <span class="tag">Pasarela exterior gratis</span>
+          <span class="tag">Entrada museo ~11€</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Calanques de Marsella <a class="maps-link" href="https://maps.google.com/?q=Calanques+de+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Acantilados de piedra blanca y calas de agua turquesa a las afueras de la ciudad. Las más accesibles son Sormiou y Sugiton. Se llega en bus o en kayak de alquiler. Para quien quiera naturaleza pura en vez de ciudad.</div>
+        <div class="plan-tags">
+          <span class="tag">~30–40 min desde el centro en bus</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Catedral La Major <a class="maps-link" href="https://maps.google.com/?q=Cathédrale+Sainte-Marie-Majeure,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La única catedral neobizantina del siglo XIX en Francia. Imponente y muy fotogénica. Junto al puerto de Joliette, a 5 min de la terminal de cruceros. Entrada gratuita.</div>
+        <div class="plan-tags">
+          <span class="tag">Entrada gratuita</span>
+          <span class="tag">5 min a pie de la terminal</span>
+        </div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Vieux-Port y L'Ombrière <a class="maps-link" href="https://maps.google.com/?q=Vieux-Port,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El espejo de acero de Foster que refleja el puerto y todo lo que hay debajo es fascinante para los niños. El Vieux-Port está lleno de barcos y ambiente. Perfecto para empezar el día.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Basílica Notre-Dame de la Garde <a class="maps-link" href="https://maps.google.com/?q=Basilique+Notre-Dame+de+la+Garde,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La subida en bus turístico es divertida y las vistas desde arriba impresionan a cualquier edad. Busca las maquetas de barcos colgadas en el techo de la basílica, es una tradición marinera única.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Calanques (para niños mayores) <a class="maps-link" href="https://maps.google.com/?q=Calanques+de+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Si los niños tienen más de 8–10 años y aguantan algo de caminata, las calanques son una experiencia increíble. Agua cristalina para bañarse y paisajes de otro mundo. Calcula 3–4 horas para la excursión.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Calissons y navettes en Le Panier <a class="maps-link" href="https://maps.google.com/?q=Le+Panier,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Probar los dulces típicos de Marsella: los calissons (mazapán de almendra y melón) y las navettes (galletas de anís con forma de barca). Misión perfecta para los niños en el barrio antiguo.</div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Free tours" emoji="🚶">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Free Tour Marsella en español</div>
+        <div class="plan-desc">Recorre el Vieux-Port, Le Panier y la Catedral La Major con un guía local. Duración ~2 horas, propina voluntaria. Ideal para entender la historia mediterránea y multicultural de la ciudad.</div>
+        <div class="plan-tags">
+          <span class="tag">Punto de encuentro: bajo L'Ombrière, Vieux-Port</span>
+          <span class="tag">~2 horas</span>
+          <span class="tag">En español</span>
+        </div>
+        <a href="https://www.guruwalk.com/marseille" class="plan-link" target="_blank">guruwalk.com/marseille →</a>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Consejo:</strong> Los días de crucero los free tours se llenan rápido. Reserva con antelación. Con llegada a las 09:00, apunta el free tour para las 10:30 o las 11:00.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Transporte desde el puerto" emoji="🚌">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Línea 35T gratuita</div>
+        <div class="plan-desc">Bus gratuito que conecta la terminal de cruceros con el Vieux-Port. Sale cada 15–20 min desde las 09:15. Es la opción más cómoda y no cuesta nada. Baja en Vieux-Port y ya estás en el centro.</div>
+        <div class="plan-tags">
+          <span class="tag">Gratis</span>
+          <span class="tag">Desde las 09:15 · Cada 15–20 min</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Metro (RTM)</div>
+        <div class="plan-desc">Billete sencillo ~1,70€. La línea 1 (azul) recorre el centro. Útil para moverse a zonas más alejadas como Cours Julien o el barrio de Endoume cerca de las calanques.</div>
+        <div class="plan-tags">
+          <span class="tag">~1,70€/trayecto</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Shuttle turístico de la terminal</div>
+        <div class="plan-desc">Las compañías de cruceros ofrecen transfer al centro por ~16€ ida y vuelta. Más caro que el bus gratuito 35T, pero más directo si la 35T no funciona o hay mucha gente.</div>
+        <div class="plan-tags">
+          <span class="tag">~16€ ida y vuelta</span>
+        </div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Restaurantes" emoji="🥐">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Chez Fonfon <a class="maps-link" href="https://maps.google.com/?q=Chez+Fonfon,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El restaurante de referencia para probar la auténtica bouillabaisse marsellesa. En el pequeño puerto de Vallon des Auffes (una cala preciosa a 10 min del Vieux-Port). Precio elevado (~50–70€/persona) pero experiencia única. Reserva imprescindible.</div>
+        <div class="plan-tags">
+          <span class="tag">Vallon des Auffes</span>
+          <span class="tag">~50–70€/persona</span>
+          <span class="tag">Reserva imprescindible</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Le Café des Épices <a class="maps-link" href="https://maps.google.com/?q=Caf%C3%A9+des+%C3%89pices,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Cocina provenzal moderna y creativa. Menú del mediodía ~25–30€. Muy bien valorado por los locales, en el barrio antiguo cerca del Vieux-Port. Reserva recomendada.</div>
+        <div class="plan-tags">
+          <span class="tag">Junto al Vieux-Port</span>
+          <span class="tag">~25–30€ menú</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Marché du Vieux-Port (pescado fresco) <a class="maps-link" href="https://maps.google.com/?q=March%C3%A9+du+Poisson,+Vieux-Port,+Marseille" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El mercado de pescado del Vieux-Port funciona cada mañana (hasta ~13:00). Las pescadoras venden directamente desde las barcas. No es para comprar y cocinar, sino para ver el ambiente auténtico y a veces hay puestos de marisco para comer al momento.</div>
+        <div class="plan-tags">
+          <span class="tag">Hasta ~13:00</span>
+          <span class="tag">Ambiente local único</span>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Platos típicos:</strong> Bouillabaisse (sopa de pescado con rouille), soupe de poisson, pan bagnat, tapenade, pastis (el aperitivo anisado local), calissons y navettes de dulce.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Consejos prácticos" emoji="ℹ️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Horario de vuelta al barco</div>
+        <div class="plan-desc">La salida es a las 18:00. Vuelve antes de las 17:15. El bus 35T gratuito funciona en ambos sentidos. Calcula al menos 45 min de margen si estás lejos del puerto.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Qué comprar</div>
+        <div class="plan-desc">Jabón de Marsella auténtico (busca el sello "Savon de Marseille" con 72% de aceite vegetal), pastis, tapenade, calissons, navettes de la Four des Navettes (la panadería más antigua de Marsella, desde 1781).</div>
+      </div>
+    </div>
+  </Collapsible>
 </Layout>
+
+<style>
+  .plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding-top: 0.5rem;
+  }
+  .plan-item {
+    border-left: 3px solid var(--color-teal-light);
+    padding-left: 0.875rem;
+  }
+  .plan-name {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: var(--color-navy);
+    margin-bottom: 0.25rem;
+  }
+  .plan-desc {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    line-height: 1.55;
+  }
+  .plan-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-top: 0.375rem;
+  }
+  .tag {
+    background: var(--color-gray-100);
+    color: var(--color-gray-600);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+  .plan-link {
+    display: inline-block;
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    text-decoration: underline;
+  }
+  .tip-box {
+    background: var(--color-sand);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--color-gray-800);
+    margin-top: 0.875rem;
+    line-height: 1.55;
+  }
+  .tip-box strong {
+    color: var(--color-navy);
+  }
+  .maps-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    background: #e0f7fd;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.375rem;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+</style>

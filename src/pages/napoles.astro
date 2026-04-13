@@ -16,10 +16,229 @@ import Collapsible from '../components/Collapsible.astro';
     gradient="linear-gradient(135deg, #c0392b 0%, #922b21 100%)"
   />
 
-  <Collapsible title="Planes generales" emoji="🗺️" />
-  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧" />
-  <Collapsible title="Free tours" emoji="🚶" />
-  <Collapsible title="Transporte desde el puerto" emoji="🚌" />
-  <Collapsible title="Restaurantes" emoji="🍕" />
-  <Collapsible title="Consejos prácticos" emoji="ℹ️" />
+  <Collapsible title="Planes generales" emoji="🗺️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Spaccanapoli <a class="maps-link" href="https://maps.google.com/?q=Spaccanapoli,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La calle que literalmente "parte Nápoles" en dos. Kilómetros de callejuelas barrocas, iglesias, tiendas de presepi (belenes) y pizzerías. El corazón del casco antiguo declarado Patrimonio UNESCO.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Piazza del Plebiscito <a class="maps-link" href="https://maps.google.com/?q=Piazza+del+Plebiscito,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La plaza más grande de Nápoles. Flanqueada por la Basílica de San Francisco de Paula y el Palacio Real. Punto de partida ideal para la jornada, a 10 min a pie del puerto.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Castel dell'Ovo <a class="maps-link" href="https://maps.google.com/?q=Castel+dell%27Ovo,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El castillo más antiguo de Nápoles, sobre un islote en el mar. Entrada gratuita. Vistas espectaculares del golfo y del Vesubio. A 15 min a pie del puerto.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Galleria Umberto I <a class="maps-link" href="https://maps.google.com/?q=Galleria+Umberto+I,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Galería comercial del siglo XIX con una cúpula de hierro y cristal impresionante. Buen sitio para un café bajo techo. Justo al lado del Teatro San Carlo.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Pompeya <a class="maps-link" href="https://maps.google.com/?q=Scavi+di+Pompei,+Pompei" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Si se quiere salir de la ciudad, Pompeya está a 40 min en tren (Circumvesuviana desde Garibaldi, ~3€). Lleva al menos 3 horas para verla bien. Compra la entrada online para evitar colas (~18€).</div>
+        <div class="plan-tags">
+          <span class="tag">40 min en tren</span>
+          <span class="tag">~3€ tren · ~18€ entrada</span>
+          <span class="tag">Reserva online</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Via dei Tribunali <a class="maps-link" href="https://maps.google.com/?q=Via+dei+Tribunali,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La calle de la pizza. Concentra las mejores y más antiguas pizzerías de la ciudad. L'Antica Pizzeria da Michele está aquí. Imprescindible para comer.</div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Castel dell'Ovo <a class="maps-link" href="https://maps.google.com/?q=Castel+dell%27Ovo,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Un castillo de verdad sobre el mar, entrada gratuita. A los niños les encanta el entorno y las vistas. Rodea el islote paseando por el pequeño puerto de Borgo Marinari.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Funicular del Vomero <a class="maps-link" href="https://maps.google.com/?q=Funicolare+Centrale,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Subir en funicular hasta el barrio del Vomero es una experiencia muy divertida para los niños. Billete ~1,10€. Arriba hay vistas panorámicas y el Castel Sant'Elmo.</div>
+        <div class="plan-tags">
+          <span class="tag">~1,10€/trayecto</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Pompeya <a class="maps-link" href="https://maps.google.com/?q=Scavi+di+Pompei,+Pompei" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">A los niños mayores de 7-8 años suele fascinarles. La ciudad congelada en el tiempo, los moldes de las víctimas del volcán y el Vesubio al fondo hacen un impacto enorme.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Pizza en Via dei Tribunali <a class="maps-link" href="https://maps.google.com/?q=Via+dei+Tribunali,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Comer la pizza más famosa del mundo en su ciudad de origen es una experiencia que los niños recuerdan. Da Michele cobra ~6€ la margarita. La cola avanza rápido.</div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Free tours" emoji="🚶">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Free Tour del Nápoles Antiguo</div>
+        <div class="plan-desc">Recorre el centro histórico UNESCO: Spaccanapoli, el Duomo, las iglesias barrocas y los mercados. El guía lleva a los mejores sitios de pizza y street food al terminar.</div>
+        <div class="plan-tags">
+          <span class="tag">Punto de encuentro: Piazza Dante</span>
+          <span class="tag">~2,5 horas</span>
+          <span class="tag">En español</span>
+        </div>
+        <a href="https://www.guruwalk.com/naples" class="plan-link" target="_blank">guruwalk.com/naples →</a>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Strawberry Tours Nápoles</div>
+        <div class="plan-desc">Free tours diarios en español con guías locales. También ofrecen tour de street food por el Mercado Pignasecca (el mercado más antiguo de la ciudad, siglo XVI).</div>
+        <a href="https://strawberrytours.com/naples" class="plan-link" target="_blank">strawberrytours.com/naples →</a>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Consejo:</strong> Con llegada a las 08:30 conviene reservar el free tour para las 10:00. Así tienes tiempo de llegar, orientarte y aún queda tarde libre para pizza y callejear.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Transporte desde el puerto" emoji="🚌">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">A pie</div>
+        <div class="plan-desc">El puerto de cruceros (Stazione Marittima) está en el centro. Piazza del Plebiscito a 10 min andando, Castel dell'Ovo a 15 min. No hace falta transporte para los sitios principales.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Funicular</div>
+        <div class="plan-desc">Billete único ~1,10€ válido 90 min. Hay 4 líneas que suben al barrio del Vomero. Se compra en estancos o máquinas del metro.</div>
+        <div class="plan-tags">
+          <span class="tag">~1,10€/trayecto</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Tren Circumvesuviana → Pompeya</div>
+        <div class="plan-desc">Sale desde Napoli Garibaldi. Línea hacia Sorrento, bajada en "Pompei Scavi – Villa dei Misteri". Sale cada 30 min, ~40 min de trayecto, ~3€.</div>
+        <div class="plan-tags">
+          <span class="tag">~3€ ida</span>
+          <span class="tag">Cada 30 min</span>
+          <span class="tag">Napoli Garibaldi → Pompei Scavi</span>
+        </div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Restaurantes" emoji="🍕">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">L'Antica Pizzeria da Michele <a class="maps-link" href="https://maps.google.com/?q=L%27Antica+Pizzeria+da+Michele,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La pizzería más famosa del mundo, fundada en 1870. Solo hacen margarita y marinara (~6€). Siempre hay cola, pero avanza rápido. Salió en Comer, Rezar, Amar.</div>
+        <div class="plan-tags">
+          <span class="tag">Via dei Tribunali</span>
+          <span class="tag">~6€ la pizza</span>
+          <span class="tag">Solo margarita y marinara</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Pizzeria Gino Sorbillo <a class="maps-link" href="https://maps.google.com/?q=Pizzeria+Gino+Sorbillo,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Otra institución napolitana, también en Via dei Tribunali. Más variedad de pizzas y masas más gruesas. Muy popular entre locales. Reserva o llega al abrir.</div>
+        <div class="plan-tags">
+          <span class="tag">Via dei Tribunali</span>
+          <span class="tag">~7–10€ la pizza</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Trattoria da Nennella <a class="maps-link" href="https://maps.google.com/?q=Trattoria+da+Nennella,+Napoli" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Cocina tradicional napolitana sin artificios. Menú del día con pasta, segundo y postre por ~10–12€. Ambiente caótico y divertido, muy auténtico. En el Quartieri Spagnoli.</div>
+        <div class="plan-tags">
+          <span class="tag">Quartieri Spagnoli</span>
+          <span class="tag">~10–12€ menú completo</span>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Platos típicos:</strong> Pizza margarita y marinara, spaghetti alle vongole, ragù napoletano, frittura di paranza (fritos de mar), sfogliatella y pastiera (dulces), limoncello al final.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Consejos prácticos" emoji="ℹ️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Horario de vuelta al barco</div>
+        <div class="plan-desc">La salida es a las 18:00. Vuelve antes de las 17:30. Si vas a Pompeya en tren, calcula salir de allí antes de las 15:30 para llegar cómodo.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Carteristas</div>
+        <div class="plan-desc">Nápoles tiene fama de carteristas, especialmente en las zonas turísticas y en el metro. Bolso cruzado en el pecho, nada en bolsillos traseros y ojo con el móvil al sacarlo.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Qué comprar</div>
+        <div class="plan-desc">Limoncello, pasta seca artesana, conservas de tomate San Marzano, figuras de presepi (belenes napolitanos) en Via San Gregorio Armeno, cerámica de Vietri.</div>
+      </div>
+    </div>
+  </Collapsible>
 </Layout>
+
+<style>
+  .plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding-top: 0.5rem;
+  }
+  .plan-item {
+    border-left: 3px solid var(--color-teal-light);
+    padding-left: 0.875rem;
+  }
+  .plan-name {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: var(--color-navy);
+    margin-bottom: 0.25rem;
+  }
+  .plan-desc {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    line-height: 1.55;
+  }
+  .plan-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-top: 0.375rem;
+  }
+  .tag {
+    background: var(--color-gray-100);
+    color: var(--color-gray-600);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+  .plan-link {
+    display: inline-block;
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    text-decoration: underline;
+  }
+  .tip-box {
+    background: var(--color-sand);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--color-gray-800);
+    margin-top: 0.875rem;
+    line-height: 1.55;
+  }
+  .tip-box strong {
+    color: var(--color-navy);
+  }
+  .maps-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    background: #e0f7fd;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.375rem;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+</style>
