@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 const days = [
   {
     date: "Dom 3 mayo",
@@ -39,7 +41,7 @@ const days = [
     flag: "🇮🇹",
     time: "07:00 – 16:00",
     type: "port",
-    url: "/cagliari",
+    url: `${base}/cagliari`,
     desc: "Capital de Cerdeña"
   },
   {
@@ -49,7 +51,7 @@ const days = [
     flag: "🇮🇹",
     time: "08:30 – 18:00 · Capri 20:00–21:00",
     type: "port",
-    url: "/napoles",
+    url: `${base}/napoles`,
     desc: "Nápoles + vista nocturna de Capri"
   },
   {
@@ -59,7 +61,7 @@ const days = [
     flag: "🇮🇹",
     time: "08:00 – 19:00",
     type: "port",
-    url: "/roma",
+    url: `${base}/roma`,
     desc: "La ciudad eterna"
   },
   {
@@ -69,7 +71,7 @@ const days = [
     flag: "🇮🇹",
     time: "08:30 – 18:00",
     type: "port",
-    url: "/genova",
+    url: `${base}/genova`,
     desc: "La Superba y la Riviera Italiana"
   },
   {
@@ -79,7 +81,7 @@ const days = [
     flag: "🇫🇷",
     time: "09:00 – 18:00",
     type: "port",
-    url: "/marsella",
+    url: `${base}/marsella`,
     desc: "La ciudad fócida del Mediterráneo"
   },
   {
@@ -98,7 +100,6 @@ const days = [
 <Layout title="Inicio">
   <div class="home-hero">
     <div class="hero-emoji">🛳️</div>
-    <h1 class="hero-title">Mediterráneo Occidental</h1>
     <p class="hero-sub">3 – 10 mayo · 2026</p>
     <div class="hero-badges">
       <span class="badge">8 días</span>

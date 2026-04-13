@@ -4,7 +4,9 @@ interface Props {
   backUrl?: string;
   backLabel?: string;
 }
-const { title, backUrl, backLabel } = Astro.props;
+const { title, backLabel } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const backUrl = Astro.props.backUrl ? `${base}${Astro.props.backUrl}` : undefined;
 ---
 
 <!doctype html>
