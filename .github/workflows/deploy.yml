@@ -27,7 +27,6 @@ jobs:
           node-version: 22
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
-      - uses: actions/configure-pages@v5
       - run: pnpm install
       - run: pnpm build
       - uses: actions/upload-pages-artifact@v3
