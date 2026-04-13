@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CityHeader from '../components/CityHeader.astro';
+import Collapsible from '../components/Collapsible.astro';
+---
+
+<Layout title="Cagliari" backUrl="/" backLabel="Itinerario">
+  <CityHeader
+    city="Cagliari"
+    country="Cerdeña, Italia"
+    flag="🇮🇹"
+    date="Miércoles 6 de mayo · Día 3"
+    arrival="07:00"
+    departure="16:00"
+    note="9 horas en puerto · Puerto: Porto di Cagliari"
+    gradient="linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%)"
+  />
+
+  <Collapsible title="Planes generales" emoji="🗺️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Barrio de Castello <a class="maps-link" href="https://maps.google.com/?q=Castello,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El casco histórico medieval en lo alto de la ciudad. Calles empedradas, murallas medievales y vistas panorámicas espectaculares. Acceso a pie subiendo por Via Manno o en ascensor desde Piazza Yenne.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Bastione di Saint Remy <a class="maps-link" href="https://maps.google.com/?q=Bastione+di+Saint+Remy,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Terraza mirador del siglo XIX con las mejores vistas de Cagliari y el golfo. Hay cafeterías debajo de las arcadas. Imprescindible para la foto.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Catedral de Santa María <a class="maps-link" href="https://maps.google.com/?q=Cattedrale+di+Santa+Maria,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Construida en el siglo XIII, mezcla de estilos pisano, barroco y neorrománico. Entrada gratuita. Está en la Piazza Palazzo, en el corazón de Castello.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Torre dell'Elefante <a class="maps-link" href="https://maps.google.com/?q=Torre+dell%27Elefante,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Una de las dos torres medievales que quedan en pie (siglo XIV). Se puede subir para tener vistas sobre los tejados del barrio. Entrada ~3€.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Anfiteatro Romano <a class="maps-link" href="https://maps.google.com/?q=Anfiteatro+Romano,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Uno de los mejor conservados de Italia. Excavado en la roca viva, data del siglo II d.C. Está a 10 min a pie del puerto, en el barrio de Villanova.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Playa de Poetto <a class="maps-link" href="https://maps.google.com/?q=Spiaggia+del+Poetto,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">8 km de arena blanca y aguas turquesas a 10 min en autobús del centro. Perfecta si el día acompaña. Hay chiringuitos y alquiler de tumbonas. Bus PF desde Piazza Matteotti.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Barrio de Marina <a class="maps-link" href="https://maps.google.com/?q=Marina,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">El barrio más animado, justo al lado del puerto. Lleno de callejuelas con restaurantes, heladerías y tiendas de productos locales. Ideal para pasear y comer.</div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Playa de Poetto <a class="maps-link" href="https://maps.google.com/?q=Spiaggia+del+Poetto,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La opción estrella con niños. Aguas poco profundas y tranquilas, arena fina y muchos servicios. En mayo el agua aún está fría pero la playa es preciosa. Bus PF desde Piazza Matteotti (~20 min).</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Parque de Molentargius <a class="maps-link" href="https://maps.google.com/?q=Parco+Naturale+Regionale+Molentargius,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Parque natural justo detrás de Poetto. Combinable con la playa. En mayo se pueden ver flamencos rosados en los estanques. Entrada gratuita, hay carriles para caminar.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Museo Arqueológico Nacional <a class="maps-link" href="https://maps.google.com/?q=Museo+Archeologico+Nazionale,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">Alberga los famosos Gigantes de Monte Prama, estatuas nurágicas únicas en el mundo. A los niños les suelen encantar. En la Ciudadela de los Museos. Entrada ~5€.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Torres medievales <a class="maps-link" href="https://maps.google.com/?q=Torre+dell%27Elefante,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La Torre dell'Elefante y la Torre di San Pancrazio son como castillos de verdad. A los niños les gusta subir y asomarse. Son el símbolo de la ciudad.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Heladería en Piazza Yenne <a class="maps-link" href="https://maps.google.com/?q=Piazza+Yenne,+Cagliari" target="_blank">📍 Maps</a></div>
+        <div class="plan-desc">La plaza principal está llena de heladerías. El gelato sardo es cremoso y con sabores locales como mirto o pistacchio. Un clásico para reponer fuerzas.</div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Free tours" emoji="🚶">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Free Tours Cagliari</div>
+        <div class="plan-desc">El free tour más conocido de la ciudad, en español. Dura unas 2 horas y recorre Castello, la Catedral, las Torres medievales y los miradores. Se paga lo que se quiera al final (tip voluntario).</div>
+        <div class="plan-tags">
+          <span class="tag">Punto de encuentro: Obelisco de Piazza Yenne</span>
+          <span class="tag">~2 horas</span>
+          <span class="tag">En español</span>
+        </div>
+        <a href="https://www.freetourscagliari.com" class="plan-link" target="_blank">freetourscagliari.com →</a>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">GuruWalk Cagliari</div>
+        <div class="plan-desc">Plataforma con varios tours a precio libre. Permite ver disponibilidad y reservar con antelación. Opciones en español con distintos guías locales.</div>
+        <a href="https://www.guruwalk.com/cagliari" class="plan-link" target="_blank">guruwalk.com/cagliari →</a>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Consejo:</strong> Con llegada a las 07:00 conviene reservar el free tour para las 09:00–10:00 para tener tiempo de comer y pasear después tranquilamente antes de volver al barco a las 16:00.
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Transporte desde el puerto" emoji="🚌">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Shuttle gratuito de la terminal</div>
+        <div class="plan-desc">La terminal tiene un shuttle gratuito hasta Via Roma. Desde allí el centro es todo a pie.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Bus CTM — Línea PF para Poetto</div>
+        <div class="plan-desc">Sale desde Piazza Matteotti (junto al puerto). Billete ~1,30€. Cómpralo en los estancos o en la app CTM antes de subir.</div>
+        <div class="plan-tags">
+          <span class="tag">~1,30€/trayecto</span>
+          <span class="tag">~20 min hasta Poetto</span>
+        </div>
+      </div>
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Restaurantes" emoji="🍽️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Su Cumbidu</div>
+        <div class="plan-desc">Uno de los más populares de Cagliari, en el barrio de Marina. Cocina sarda auténtica a precios razonables. Prueba los malloreddus (pasta sarda) o el cordero. Reserva recomendada.</div>
+        <div class="plan-tags">
+          <span class="tag">Barrio Marina</span>
+          <span class="tag">Cocina sarda</span>
+          <span class="tag">~20–30€/persona</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Su Combidu Mare</div>
+        <div class="plan-desc">La versión marinera del anterior, especializada en pescado fresco. Fritto misto, bottarga y espaguetis a las almejas. Muy buena relación calidad-precio.</div>
+        <div class="plan-tags">
+          <span class="tag">Especialidad pescado</span>
+          <span class="tag">~25–35€/persona</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Stella Marina di Montecristo</div>
+        <div class="plan-desc">Restaurante con reconocimiento Michelin pero sin precios inflados. Cocina marinera sarda de alta calidad. Muy bien situado, cerca del puerto.</div>
+        <div class="plan-tags">
+          <span class="tag">Michelin</span>
+          <span class="tag">Mariscos y pescado</span>
+          <span class="tag">~40–60€/persona</span>
+        </div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Osteria Antica (Via Azuni 56)</div>
+        <div class="plan-desc">Pequeña ostería en el barrio de Marina con ambiente tradicional. Menú del día asequible, buena pasta y vino local. Ambiente auténtico sin turistas.</div>
+        <div class="plan-tags">
+          <span class="tag">Barrio Marina</span>
+          <span class="tag">Económico</span>
+          <span class="tag">~15–20€/persona</span>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>Platos típicos a pedir:</strong> Malloreddus al ragú sardo, bottarga (huevas de mújol curadas), fregola con arselle (pasta con almejas), porceddu (lechón asado), seadas (postre de queso con miel).
+    </div>
+  </Collapsible>
+
+  <Collapsible title="Consejos prácticos" emoji="ℹ️">
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">Horario de vuelta al barco</div>
+        <div class="plan-desc">La salida es a las 16:00. Se recomienda estar de vuelta en el puerto antes de las 15:30. El shuttle de vuelta desde Via Roma funciona hasta poco antes de la salida.</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">Qué comprar</div>
+        <div class="plan-desc">Bottarga (huevas de mújol), mirto (licor de mirto), queso pecorino sardo, cerámica de Assemini, joyas de coral. El mercado de San Benedetto es el más grande de Cerdeña.</div>
+      </div>
+    </div>
+  </Collapsible>
+</Layout>
+
+<style>
+  .plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding-top: 0.5rem;
+  }
+
+  .plan-item {
+    border-left: 3px solid var(--color-teal-light);
+    padding-left: 0.875rem;
+  }
+
+  .plan-name {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: var(--color-navy);
+    margin-bottom: 0.25rem;
+  }
+
+  .plan-desc {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    line-height: 1.55;
+  }
+
+  .plan-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-top: 0.375rem;
+  }
+
+  .tag {
+    background: var(--color-gray-100);
+    color: var(--color-gray-600);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+
+  .plan-link {
+    display: inline-block;
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    text-decoration: underline;
+  }
+
+  .tip-box {
+    background: var(--color-sand);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--color-gray-800);
+    margin-top: 0.875rem;
+    line-height: 1.55;
+  }
+
+  .tip-box strong {
+    color: var(--color-navy);
+  }
+
+  .maps-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    background: #e0f7fd;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.375rem;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+</style>

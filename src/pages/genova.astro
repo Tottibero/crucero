@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CityHeader from '../components/CityHeader.astro';
+import Collapsible from '../components/Collapsible.astro';
+---
+
+<Layout title="Génova / Portofino" backUrl="/" backLabel="Itinerario">
+  <CityHeader
+    city="Génova"
+    country="Liguria, Italia · y Portofino"
+    flag="🇮🇹"
+    date="Sábado 9 de mayo · Día 6"
+    arrival="08:30"
+    departure="18:00"
+    note="9h 30min en puerto · Portofino a ~35km"
+    gradient="linear-gradient(135deg, #1a3a5c 0%, #0d6e9c 100%)"
+  />
+
+  <Collapsible title="Planes generales" emoji="🗺️" />
+  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧" />
+  <Collapsible title="Free tours" emoji="🚶" />
+  <Collapsible title="Transporte desde el puerto" emoji="🚌" />
+  <Collapsible title="Restaurantes" emoji="🍝" />
+  <Collapsible title="Consejos prácticos" emoji="ℹ️" />
+</Layout>

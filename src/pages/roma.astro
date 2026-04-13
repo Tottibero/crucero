@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CityHeader from '../components/CityHeader.astro';
+import Collapsible from '../components/Collapsible.astro';
+---
+
+<Layout title="Roma" backUrl="/" backLabel="Itinerario">
+  <CityHeader
+    city="Roma"
+    country="Civitavecchia, Italia"
+    flag="🇮🇹"
+    date="Viernes 8 de mayo · Día 5"
+    arrival="08:00"
+    departure="19:00"
+    note="11 horas en puerto · Puerto: Civitavecchia (~80km de Roma)"
+    gradient="linear-gradient(135deg, #d4a017 0%, #9c6400 100%)"
+  />
+
+  <Collapsible title="Planes generales" emoji="🗺️" />
+  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧" />
+  <Collapsible title="Free tours" emoji="🚶" />
+  <Collapsible title="Transporte desde el puerto" emoji="🚌" />
+  <Collapsible title="Restaurantes" emoji="🍽️" />
+  <Collapsible title="Consejos prácticos" emoji="ℹ️" />
+</Layout>

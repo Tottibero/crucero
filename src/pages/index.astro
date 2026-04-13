@@ -1,0 +1,354 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const days = [
+  {
+    date: "Dom 3 mayo",
+    label: "Embarque",
+    city: "Barcelona",
+    flag: "🇪🇸",
+    time: "Salida 18:00",
+    type: "embark",
+    url: null,
+    desc: "Inicio del crucero"
+  },
+  {
+    date: "Lun 4 mayo · Día 1",
+    label: "Navegando",
+    city: "Mar Mediterráneo",
+    flag: "🌊",
+    time: "Punto oscuro Baleares 23:30–00:30",
+    type: "sea",
+    url: null,
+    desc: "Noche especial: el punto más oscuro del Mar Balear"
+  },
+  {
+    date: "Mar 5 mayo · Día 2",
+    label: "Navegando",
+    city: "Mar Mediterráneo",
+    flag: "🌊",
+    time: "Día de navegación",
+    type: "sea",
+    url: null,
+    desc: "Día libre a bordo"
+  },
+  {
+    date: "Mié 6 mayo · Día 3",
+    label: "Desembarco",
+    city: "Cagliari",
+    flag: "🇮🇹",
+    time: "07:00 – 16:00",
+    type: "port",
+    url: "/cagliari",
+    desc: "Capital de Cerdeña"
+  },
+  {
+    date: "Jue 7 mayo · Día 4",
+    label: "Desembarco",
+    city: "Nápoles + Bahía de Capri",
+    flag: "🇮🇹",
+    time: "08:30 – 18:00 · Capri 20:00–21:00",
+    type: "port",
+    url: "/napoles",
+    desc: "Nápoles + vista nocturna de Capri"
+  },
+  {
+    date: "Vie 8 mayo · Día 5",
+    label: "Desembarco",
+    city: "Roma (Civitavecchia)",
+    flag: "🇮🇹",
+    time: "08:00 – 19:00",
+    type: "port",
+    url: "/roma",
+    desc: "La ciudad eterna"
+  },
+  {
+    date: "Sáb 9 mayo · Día 6",
+    label: "Desembarco",
+    city: "Génova / Portofino",
+    flag: "🇮🇹",
+    time: "08:30 – 18:00",
+    type: "port",
+    url: "/genova",
+    desc: "La Superba y la Riviera Italiana"
+  },
+  {
+    date: "Dom 10 mayo · Día 7",
+    label: "Desembarco",
+    city: "Marsella",
+    flag: "🇫🇷",
+    time: "09:00 – 18:00",
+    type: "port",
+    url: "/marsella",
+    desc: "La ciudad fócida del Mediterráneo"
+  },
+  {
+    date: "Dom 10 mayo",
+    label: "Desembarque",
+    city: "Barcelona",
+    flag: "🇪🇸",
+    time: "Llegada 08:00",
+    type: "disembark",
+    url: null,
+    desc: "Fin del crucero"
+  },
+];
+---
+
+<Layout title="Inicio">
+  <div class="home-hero">
+    <div class="hero-emoji">🛳️</div>
+    <h1 class="hero-title">Mediterráneo Occidental</h1>
+    <p class="hero-sub">3 – 10 mayo · 2026</p>
+    <div class="hero-badges">
+      <span class="badge">8 días</span>
+      <span class="badge">5 puertos</span>
+      <span class="badge">Costa Cruceros</span>
+    </div>
+  </div>
+
+  <h2 class="section-title">Itinerario</h2>
+
+  <div class="timeline">
+    {days.map((day, i) => (
+      <div class={`tl-item tl-${day.type}`}>
+        <div class="tl-dot-col">
+          <div class="tl-dot">
+            <span class="tl-flag">{day.flag}</span>
+          </div>
+          {i < days.length - 1 && <div class="tl-line" />}
+        </div>
+
+        <div class="tl-content">
+          {day.url ? (
+            <a href={day.url} class="tl-card tl-card-link">
+              <div class="tl-card-top">
+                <span class="tl-label tl-label-port">{day.label}</span>
+                <span class="tl-date">{day.date}</span>
+              </div>
+              <div class="tl-city">{day.city}</div>
+              <div class="tl-time">{day.time}</div>
+              <div class="tl-desc">{day.desc}</div>
+              <div class="tl-arrow">Ver planes →</div>
+            </a>
+          ) : (
+            <div class="tl-card">
+              <div class="tl-card-top">
+                <span class={`tl-label tl-label-${day.type}`}>{day.label}</span>
+                <span class="tl-date">{day.date}</span>
+              </div>
+              <div class="tl-city">{day.city}</div>
+              <div class="tl-time">{day.time}</div>
+              {day.desc && <div class="tl-desc">{day.desc}</div>}
+            </div>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  /* Hero */
+  .home-hero {
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 50%, #1a6b8a 100%);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.25rem 1.75rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-emoji {
+    font-size: 3rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .hero-title {
+    font-size: 1.625rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    opacity: 0.75;
+    margin-bottom: 1rem;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 100px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-gray-600);
+    margin-bottom: 1rem;
+  }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tl-item {
+    display: flex;
+    gap: 0.875rem;
+    min-height: 0;
+  }
+
+  /* Dot column */
+  .tl-dot-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 40px;
+  }
+
+  .tl-dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .tl-port .tl-dot {
+    border-color: var(--color-teal);
+    background: #e0f7fd;
+  }
+
+  .tl-embark .tl-dot,
+  .tl-disembark .tl-dot {
+    border-color: var(--color-coral);
+    background: #fff0f0;
+  }
+
+  .tl-flag {
+    font-size: 1.125rem;
+  }
+
+  .tl-line {
+    flex: 1;
+    width: 2px;
+    background: var(--color-gray-200);
+    margin: 4px 0;
+    min-height: 12px;
+  }
+
+  /* Cards */
+  .tl-content {
+    flex: 1;
+    padding-bottom: 0.875rem;
+    min-width: 0;
+  }
+
+  .tl-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-md);
+    padding: 0.875rem 1rem;
+    box-shadow: var(--shadow-sm);
+    display: block;
+  }
+
+  .tl-card-link {
+    transition: box-shadow 0.15s, transform 0.15s;
+    border-color: var(--color-teal-light);
+  }
+
+  .tl-card-link:active {
+    transform: scale(0.98);
+    box-shadow: var(--shadow-md);
+  }
+
+  .tl-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.375rem;
+    flex-wrap: wrap;
+  }
+
+  .tl-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 100px;
+  }
+
+  .tl-label-port {
+    background: #e0f7fd;
+    color: #007090;
+  }
+
+  .tl-label-sea {
+    background: #e8f0fe;
+    color: #3b5bdb;
+  }
+
+  .tl-label-embark,
+  .tl-label-disembark {
+    background: #fff0f0;
+    color: #c0392b;
+  }
+
+  .tl-date {
+    font-size: 0.75rem;
+    color: var(--color-gray-600);
+    margin-left: auto;
+  }
+
+  .tl-city {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: 0.25rem;
+  }
+
+  .tl-time {
+    font-size: 0.8125rem;
+    color: var(--color-teal);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .tl-desc {
+    font-size: 0.8rem;
+    color: var(--color-gray-600);
+  }
+
+  .tl-arrow {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    margin-top: 0.5rem;
+  }
+</style>

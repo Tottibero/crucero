@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CityHeader from '../components/CityHeader.astro';
+import Collapsible from '../components/Collapsible.astro';
+---
+
+<Layout title="Nápoles" backUrl="/" backLabel="Itinerario">
+  <CityHeader
+    city="Nápoles"
+    country="Campania, Italia"
+    flag="🇮🇹"
+    date="Jueves 7 de mayo · Día 4"
+    arrival="08:30"
+    departure="18:00"
+    note="9h 30min en puerto · Bahía de Capri 20:00–21:00 desde el barco"
+    gradient="linear-gradient(135deg, #c0392b 0%, #922b21 100%)"
+  />
+
+  <Collapsible title="Planes generales" emoji="🗺️" />
+  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧" />
+  <Collapsible title="Free tours" emoji="🚶" />
+  <Collapsible title="Transporte desde el puerto" emoji="🚌" />
+  <Collapsible title="Restaurantes" emoji="🍕" />
+  <Collapsible title="Consejos prácticos" emoji="ℹ️" />
+</Layout>

@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CityHeader from '../components/CityHeader.astro';
+import Collapsible from '../components/Collapsible.astro';
+---
+
+<Layout title="Marsella" backUrl="/" backLabel="Itinerario">
+  <CityHeader
+    city="Marsella"
+    country="Provence, Francia"
+    flag="🇫🇷"
+    date="Domingo 10 de mayo · Día 7"
+    arrival="09:00"
+    departure="18:00"
+    note="9 horas en puerto · Puerto: Vieux-Port de Marseille"
+    gradient="linear-gradient(135deg, #2980b9 0%, #1a5276 100%)"
+  />
+
+  <Collapsible title="Planes generales" emoji="🗺️" />
+  <Collapsible title="Planes con niños" emoji="👨‍👩‍👧" />
+  <Collapsible title="Free tours" emoji="🚶" />
+  <Collapsible title="Transporte desde el puerto" emoji="🚌" />
+  <Collapsible title="Restaurantes" emoji="🥐" />
+  <Collapsible title="Consejos prácticos" emoji="ℹ️" />
+</Layout>
