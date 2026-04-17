@@ -32,11 +32,17 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Torre dell'Elefante <a class="maps-link" href="https://maps.google.com/?q=Torre+dell%27Elefante,+Cagliari" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Una de las dos torres medievales que quedan en pie (siglo XIV). Se puede subir para tener vistas sobre los tejados del barrio. Entrada ~3€.</div>
+        <div class="plan-desc">Una de las dos torres medievales que quedan en pie (siglo XIV). Se puede subir para tener vistas sobre los tejados del barrio.</div>
+        <div class="plan-tags">
+          <span class="tag-price">~3€ entrada</span>
+        </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Anfiteatro Romano <a class="maps-link" href="https://maps.google.com/?q=Anfiteatro+Romano,+Cagliari" target="_blank">📍 Maps</a></div>
         <div class="plan-desc">Uno de los mejor conservados de Italia. Excavado en la roca viva, data del siglo II d.C. Está a 10 min a pie del puerto, en el barrio de Villanova.</div>
+        <div class="plan-tags">
+          <span class="tag-price">~3€ entrada</span>
+        </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Playa de Poetto <a class="maps-link" href="https://maps.google.com/?q=Spiaggia+del+Poetto,+Cagliari" target="_blank">📍 Maps</a></div>
@@ -57,7 +63,10 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Museo Arqueológico Nacional <a class="maps-link" href="https://maps.google.com/?q=Museo+Archeologico+Nazionale,+Cagliari" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Alberga los famosos Gigantes de Monte Prama, estatuas nurágicas únicas en el mundo. A los niños les suelen encantar. En la Ciudadela de los Museos. Entrada ~5€.</div>
+        <div class="plan-desc">Alberga los famosos Gigantes de Monte Prama, estatuas nurágicas únicas en el mundo. A los niños les suelen encantar. En la Ciudadela de los Museos.</div>
+        <div class="plan-tags">
+          <span class="tag-price">~5€ entrada</span>
+        </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Heladería en Piazza Yenne <a class="maps-link" href="https://maps.google.com/?q=Piazza+Yenne,+Cagliari" target="_blank">📍 Maps</a></div>
@@ -75,8 +84,8 @@ import Collapsible from '../components/Collapsible.astro';
           <span class="tag">10:00 AM</span>
           <span class="tag">2 horas</span>
           <span class="tag">Mayores de 10 años</span>
-          <span class="tag">Adultos (18+): 11€</span>
-          <span class="tag">Niños (5–17): 6€</span>
+          <span class="tag-price">Adultos (18+): 11€</span>
+          <span class="tag-price">Niños (5–17): 6€</span>
         </div>
         <a href="https://www.freetourscagliari.com" class="plan-link" target="_blank">freetourscagliari.com →</a>
       </div>
@@ -94,9 +103,9 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Bus CTM — Línea PF para Poetto</div>
-        <div class="plan-desc">Sale desde Piazza Matteotti (junto al puerto). Billete ~1,30€. Cómpralo en los estancos o en la app CTM antes de subir.</div>
+        <div class="plan-desc">Sale desde Piazza Matteotti (junto al puerto). Cómpralo en los estancos o en la app CTM antes de subir.</div>
         <div class="plan-tags">
-          <span class="tag">~1,30€/trayecto</span>
+          <span class="tag-price">~1,30€/trayecto</span>
           <span class="tag">~20 min hasta Poetto</span>
         </div>
       </div>
@@ -111,7 +120,7 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-tags">
           <span class="tag">Barrio Marina</span>
           <span class="tag">Cocina sarda</span>
-          <span class="tag">~20–30€/persona</span>
+          <span class="tag-price">~20–30€/persona</span>
         </div>
       </div>
       <div class="plan-item">
@@ -119,7 +128,7 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-desc">La versión marinera del anterior, especializada en pescado fresco. Fritto misto, bottarga y espaguetis a las almejas. Muy buena relación calidad-precio.</div>
         <div class="plan-tags">
           <span class="tag">Especialidad pescado</span>
-          <span class="tag">~25–35€/persona</span>
+          <span class="tag-price">~25–35€/persona</span>
         </div>
       </div>
       <div class="plan-item">
@@ -128,7 +137,7 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-tags">
           <span class="tag">Michelin</span>
           <span class="tag">Mariscos y pescado</span>
-          <span class="tag">~40–60€/persona</span>
+          <span class="tag-price">~40–60€/persona</span>
         </div>
       </div>
       <div class="plan-item">
@@ -137,7 +146,7 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-tags">
           <span class="tag">Barrio Marina</span>
           <span class="tag">Económico</span>
-          <span class="tag">~15–20€/persona</span>
+          <span class="tag-price">~15–20€/persona</span>
         </div>
       </div>
     </div>
@@ -198,6 +207,16 @@ import Collapsible from '../components/Collapsible.astro';
     color: var(--color-gray-600);
     font-size: 0.75rem;
     font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+
+  .tag-price {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+    font-size: 0.75rem;
+    font-weight: 700;
     padding: 0.125rem 0.5rem;
     border-radius: 100px;
   }

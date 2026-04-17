@@ -24,29 +24,34 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Via Garibaldi (Strada Nuova) <a class="maps-link" href="https://maps.google.com/?q=Via+Garibaldi,+Genova" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">La calle más suntuosa de Génova, Patrimonio UNESCO. Palacios renacentistas de familias nobles ahora convertidos en museos. Los Palazzi dei Rolli son únicos en el mundo. Entrada a los museos ~9€.</div>
+        <div class="plan-desc">La calle más suntuosa de Génova, Patrimonio UNESCO. Palacios renacentistas de familias nobles ahora convertidos en museos. Los Palazzi dei Rolli son únicos en el mundo.</div>
         <div class="plan-tags">
           <span class="tag">Patrimonio UNESCO</span>
-          <span class="tag">Museos ~9€</span>
+          <span class="tag-price">Museos ~9€</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Porto Antico <a class="maps-link" href="https://maps.google.com/?q=Porto+Antico,+Genova" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">El puerto viejo renovado por Renzo Piano. Acuario de Génova (uno de los más grandes de Europa), el Biosphere y el Galata Museo del Mare. Muy bien conectado con la terminal de cruceros.</div>
+        <div class="plan-desc">El puerto viejo renovado por Renzo Piano. Muy bien conectado con la terminal de cruceros.</div>
+        <div class="plan-tags">
+          <span class="tag-price">Acuario ~25€ adulto · ~17€ niño</span>
+          <span class="tag-price">Biosphere ~6€</span>
+          <span class="tag-price">Galata Museo del Mare ~19€</span>
+        </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Spianata di Castelletto <a class="maps-link" href="https://maps.google.com/?q=Spianata+di+Castelletto,+Genova" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">El mejor mirador de la ciudad. Se sube en ascensor desde Via Bensa (~0,50€). Vistas panorámicas sobre los tejados rojos de los Caruggi y el puerto. Imprescindible para la foto.</div>
+        <div class="plan-desc">El mejor mirador de la ciudad. Se sube en ascensor desde Via Bensa. Vistas panorámicas sobre los tejados rojos de los Caruggi y el puerto. Imprescindible para la foto.</div>
         <div class="plan-tags">
-          <span class="tag">Ascensor ~0,50€</span>
+          <span class="tag-price">Ascensor ~0,50€</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Portofino <a class="maps-link" href="https://maps.google.com/?q=Portofino,+Genova" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">El pueblo de pescadores más glamuroso de la Riviera italiana. Casas de colores reflejadas en el agua, yates y pinos mediterráneos. Se llega en bus desde Rapallo (30 min desde Génova en tren) o en taxi (~60–80€ desde Génova).</div>
+        <div class="plan-desc">El pueblo de pescadores más glamuroso de la Riviera italiana. Casas de colores reflejadas en el agua, yates y pinos mediterráneos. Se llega en bus desde Rapallo (30 min desde Génova en tren) o en taxi desde Génova.</div>
         <div class="plan-tags">
-          <span class="tag">Tren Génova→Rapallo ~30min + bus a Portofino ~30min</span>
-          <span class="tag">O taxi directo ~60–80€</span>
+          <span class="tag-price">Tren Génova→Rapallo ~3€ + bus a Portofino</span>
+          <span class="tag-price">O taxi directo ~60–80€</span>
         </div>
       </div>
     </div>
@@ -59,7 +64,7 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-desc">Uno de los acuarios más grandes de Europa, en el Porto Antico. Tiburones, medusas, pingüinos, delfines y arrecifes de coral. A los niños les encanta. Compra entradas online para evitar cola.</div>
         <div class="plan-tags">
           <span class="tag">Porto Antico</span>
-          <span class="tag">~25€ adulto · ~17€ niño</span>
+          <span class="tag-price">~25€ adulto · ~17€ niño</span>
           <span class="tag">Reserva online</span>
         </div>
       </div>
@@ -88,17 +93,17 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Metro y autobús (AMT)</div>
-        <div class="plan-desc">Billete sencillo ~1,60€. El Génova Pass da transporte ilimitado por ~5€/día (metro, bus y funiculares incluidos). Útil si se va al Castelletto o a los barrios altos.</div>
+        <div class="plan-desc">El Génova Pass da transporte ilimitado por día (metro, bus y funiculares incluidos). Útil si se va al Castelletto o a los barrios altos.</div>
         <div class="plan-tags">
-          <span class="tag">~1,60€/trayecto</span>
-          <span class="tag">Génova Pass ~5€/día</span>
+          <span class="tag-price">~1,60€/trayecto</span>
+          <span class="tag-price">Génova Pass ~5€/día</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Tren → Rapallo → Portofino</div>
-        <div class="plan-desc">Desde la estación de Genova Piazza Principe (junto al puerto) sale el tren a Rapallo (~30 min, ~3€). Desde Rapallo, bus o ferry hasta Portofino (~30 min más). Calcula 3–4 horas para la excursión completa.</div>
+        <div class="plan-desc">Desde la estación de Genova Piazza Principe (junto al puerto) sale el tren a Rapallo (~30 min). Desde Rapallo, bus o ferry hasta Portofino (~30 min más). Calcula 3–4 horas para la excursión completa.</div>
         <div class="plan-tags">
-          <span class="tag">~3€ Génova→Rapallo</span>
+          <span class="tag-price">~3€ Génova→Rapallo</span>
           <span class="tag">+bus o ferry a Portofino</span>
           <span class="tag">Calcula 3–4h ida y vuelta</span>
         </div>
@@ -110,25 +115,25 @@ import Collapsible from '../components/Collapsible.astro';
     <div class="plan-list">
       <div class="plan-item">
         <div class="plan-name">Focacceria Mario (desde 1936) <a class="maps-link" href="https://maps.google.com/?q=Focacceria+Mario,+Genova" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">La focacceria más antigua de Génova. Focaccia recién horneada, con pesto, con aceitunas o simplemente con aceite y sal. ~1,50–2€ la porción. Para comer de pie o llevarse.</div>
+        <div class="plan-desc">La focacceria más antigua de Génova. Focaccia recién horneada, con pesto, con aceitunas o simplemente con aceite y sal. Para comer de pie o llevarse.</div>
         <div class="plan-tags">
           <span class="tag">Caruggi</span>
-          <span class="tag">~1,50–2€/porción</span>
+          <span class="tag-price">~1,50–2€/porción</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Trattoria da Maria <a class="maps-link" href="https://maps.google.com/?q=Trattoria+da+Maria,+Genova" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Legendaria trattoria en los Caruggi. Menú del día por ~12–15€ con primi, secondi y postre. Sin carta, te dicen lo que hay. Siempre llena de trabajadores del barrio. Muy auténtico.</div>
+        <div class="plan-desc">Legendaria trattoria en los Caruggi. Sin carta, te dicen lo que hay. Siempre llena de trabajadores del barrio. Muy auténtico.</div>
         <div class="plan-tags">
           <span class="tag">Caruggi</span>
-          <span class="tag">~12–15€ menú completo</span>
+          <span class="tag-price">~12–15€ menú completo</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Il Genovese <a class="maps-link" href="https://maps.google.com/?q=Il+Genovese+Ristorante,+Genova" target="_blank">📍 Maps</a></div>
         <div class="plan-desc">Cocina ligur de calidad: trofie al pesto, pansoti con salsa de nueces y brandacujun (bacalao con patatas). Bien valorado y precio razonable. Reserva recomendada.</div>
         <div class="plan-tags">
-          <span class="tag">~25–35€/persona</span>
+          <span class="tag-price">~25–35€/persona</span>
         </div>
       </div>
     </div>
@@ -188,6 +193,15 @@ import Collapsible from '../components/Collapsible.astro';
     color: var(--color-gray-600);
     font-size: 0.75rem;
     font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+  .tag-price {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+    font-size: 0.75rem;
+    font-weight: 700;
     padding: 0.125rem 0.5rem;
     border-radius: 100px;
   }

@@ -36,10 +36,10 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Pompeya <a class="maps-link" href="https://maps.google.com/?q=Scavi+di+Pompei,+Pompei" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Si se quiere salir de la ciudad, Pompeya está a 40 min en tren (Circumvesuviana desde Garibaldi, ~3€). Lleva al menos 3 horas para verla bien. Compra la entrada online para evitar colas (~18€).</div>
+        <div class="plan-desc">Si se quiere salir de la ciudad, Pompeya está a 40 min en tren (Circumvesuviana desde Garibaldi). Lleva al menos 3 horas para verla bien. Compra la entrada online para evitar colas.</div>
         <div class="plan-tags">
           <span class="tag">40 min en tren</span>
-          <span class="tag">~3€ tren · ~18€ entrada</span>
+          <span class="tag-price">~3€ tren · ~18€ entrada</span>
           <span class="tag">Reserva online</span>
         </div>
       </div>
@@ -54,9 +54,9 @@ import Collapsible from '../components/Collapsible.astro';
     <div class="plan-list">
       <div class="plan-item">
         <div class="plan-name">Funicular del Vomero <a class="maps-link" href="https://maps.google.com/?q=Funicolare+Centrale,+Napoli" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Subir en funicular hasta el barrio del Vomero es una experiencia muy divertida para los niños. Billete ~1,10€. Arriba hay vistas panorámicas y el Castel Sant'Elmo.</div>
+        <div class="plan-desc">Subir en funicular hasta el barrio del Vomero es una experiencia muy divertida para los niños. Arriba hay vistas panorámicas y el Castel Sant'Elmo.</div>
         <div class="plan-tags">
-          <span class="tag">~1,10€/trayecto</span>
+          <span class="tag-price">~1,10€/trayecto</span>
         </div>
       </div>
     </div>
@@ -107,16 +107,16 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Funicular</div>
-        <div class="plan-desc">Billete único ~1,10€ válido 90 min. Hay 4 líneas que suben al barrio del Vomero. Se compra en estancos o máquinas del metro.</div>
+        <div class="plan-desc">Billete único válido 90 min. Hay 4 líneas que suben al barrio del Vomero. Se compra en estancos o máquinas del metro.</div>
         <div class="plan-tags">
-          <span class="tag">~1,10€/trayecto</span>
+          <span class="tag-price">~1,10€/trayecto</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Tren Circumvesuviana → Pompeya</div>
-        <div class="plan-desc">Sale desde Napoli Garibaldi. Línea hacia Sorrento, bajada en "Pompei Scavi – Villa dei Misteri". Sale cada 30 min, ~40 min de trayecto, ~3€.</div>
+        <div class="plan-desc">Sale desde Napoli Garibaldi. Línea hacia Sorrento, bajada en "Pompei Scavi – Villa dei Misteri". Sale cada 30 min, ~40 min de trayecto.</div>
         <div class="plan-tags">
-          <span class="tag">~3€ ida</span>
+          <span class="tag-price">~3€ ida</span>
           <span class="tag">Cada 30 min</span>
           <span class="tag">Napoli Garibaldi → Pompei Scavi</span>
         </div>
@@ -128,10 +128,10 @@ import Collapsible from '../components/Collapsible.astro';
     <div class="plan-list">
       <div class="plan-item">
         <div class="plan-name">L'Antica Pizzeria da Michele <a class="maps-link" href="https://maps.google.com/?q=L%27Antica+Pizzeria+da+Michele,+Napoli" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">La pizzería más famosa del mundo, fundada en 1870. Solo hacen margarita y marinara (~6€). Siempre hay cola, pero avanza rápido. Salió en Comer, Rezar, Amar.</div>
+        <div class="plan-desc">La pizzería más famosa del mundo, fundada en 1870. Solo hacen margarita y marinara. Siempre hay cola, pero avanza rápido. Salió en Comer, Rezar, Amar.</div>
         <div class="plan-tags">
           <span class="tag">Via dei Tribunali</span>
-          <span class="tag">~6€ la pizza</span>
+          <span class="tag-price">~6€ la pizza</span>
           <span class="tag">Solo margarita y marinara</span>
         </div>
       </div>
@@ -140,15 +140,15 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-desc">Otra institución napolitana, también en Via dei Tribunali. Más variedad de pizzas y masas más gruesas. Muy popular entre locales. Reserva o llega al abrir.</div>
         <div class="plan-tags">
           <span class="tag">Via dei Tribunali</span>
-          <span class="tag">~7–10€ la pizza</span>
+          <span class="tag-price">~7–10€ la pizza</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Trattoria da Nennella <a class="maps-link" href="https://maps.google.com/?q=Trattoria+da+Nennella,+Napoli" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Cocina tradicional napolitana sin artificios. Menú del día con pasta, segundo y postre por ~10–12€. Ambiente caótico y divertido, muy auténtico. En el Quartieri Spagnoli.</div>
+        <div class="plan-desc">Cocina tradicional napolitana sin artificios. Ambiente caótico y divertido, muy auténtico. En el Quartieri Spagnoli.</div>
         <div class="plan-tags">
           <span class="tag">Quartieri Spagnoli</span>
-          <span class="tag">~10–12€ menú completo</span>
+          <span class="tag-price">~10–12€ menú completo</span>
         </div>
       </div>
     </div>
@@ -208,6 +208,15 @@ import Collapsible from '../components/Collapsible.astro';
     color: var(--color-gray-600);
     font-size: 0.75rem;
     font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+  .tag-price {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+    font-size: 0.75rem;
+    font-weight: 700;
     padding: 0.125rem 0.5rem;
     border-radius: 100px;
   }

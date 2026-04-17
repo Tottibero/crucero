@@ -20,17 +20,17 @@ import Collapsible from '../components/Collapsible.astro';
     <div class="plan-list">
       <div class="plan-item">
         <div class="plan-name">Fontana di Trevi <a class="maps-link" href="https://maps.google.com/?q=Fontana+di+Trevi,+Roma" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">La fuente más famosa del mundo. Llega a primera hora para evitar la aglomeración. Reserva anticipada obligatoria (~3€) para acceder a la zona. Compra el ticket en el sitio oficial antes de ir.</div>
+        <div class="plan-desc">La fuente más famosa del mundo. Llega a primera hora para evitar la aglomeración. Reserva anticipada obligatoria para acceder a la zona. Compra el ticket en el sitio oficial antes de ir.</div>
         <div class="plan-tags">
-          <span class="tag">Reserva obligatoria ~3€</span>
+          <span class="tag-price">~3€ reserva obligatoria</span>
           <span class="tag">Mejor a primera hora</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Panteón de Agripa <a class="maps-link" href="https://maps.google.com/?q=Pantheon,+Roma" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">El edificio mejor conservado de la antigüedad romana, con 2.000 años de historia. Entrada ~5€. Reserva online recomendada para no perder tiempo en cola.</div>
+        <div class="plan-desc">El edificio mejor conservado de la antigüedad romana, con 2.000 años de historia. Reserva online recomendada para no perder tiempo en cola.</div>
         <div class="plan-tags">
-          <span class="tag">~5€ entrada</span>
+          <span class="tag-price">~5€ entrada</span>
           <span class="tag">Reserva online</span>
         </div>
       </div>
@@ -40,9 +40,9 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Coliseo y Foro Romano <a class="maps-link" href="https://maps.google.com/?q=Colosseo,+Roma" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">El símbolo de Roma. Reserva la entrada online con mucha antelación (~18€ Coliseo + Foro). Sin reserva es casi imposible entrar el mismo día. Calcula 2–3 horas para ambos.</div>
+        <div class="plan-desc">El símbolo de Roma. Reserva la entrada online con mucha antelación. Sin reserva es casi imposible entrar el mismo día. Calcula 2–3 horas para ambos.</div>
         <div class="plan-tags">
-          <span class="tag">~18€ Coliseo + Foro</span>
+          <span class="tag-price">~18€ Coliseo + Foro</span>
           <span class="tag">Reserva con semanas de antelación</span>
         </div>
       </div>
@@ -52,10 +52,10 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Ciudad del Vaticano <a class="maps-link" href="https://maps.google.com/?q=Citta+del+Vaticano,+Roma" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Basílica de San Pedro (entrada gratuita), Plaza de San Pedro y los Museos Vaticanos con la Capilla Sixtina. Los museos requieren reserva online ~20€. Sin reserva la cola puede ser de 2–3 horas.</div>
+        <div class="plan-desc">Basílica de San Pedro (entrada gratuita), Plaza de San Pedro y los Museos Vaticanos con la Capilla Sixtina. Sin reserva la cola puede ser de 2–3 horas.</div>
         <div class="plan-tags">
           <span class="tag">Basílica gratis</span>
-          <span class="tag">Museos ~20€ · Reserva obligatoria</span>
+          <span class="tag-price">Museos ~20€ · Reserva obligatoria</span>
         </div>
       </div>
     </div>
@@ -68,9 +68,9 @@ import Collapsible from '../components/Collapsible.astro';
     <div class="plan-list">
       <div class="plan-item">
         <div class="plan-name">Castel Sant'Angelo <a class="maps-link" href="https://maps.google.com/?q=Castel+Sant%27Angelo,+Roma" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Antiguo mausoleo imperial convertido en fortaleza papal. A los niños les parece un castillo de verdad. Vistas espectaculares del Tíber y la ciudad desde arriba. Entrada ~15€.</div>
+        <div class="plan-desc">Antiguo mausoleo imperial convertido en fortaleza papal. A los niños les parece un castillo de verdad. Vistas espectaculares del Tíber y la ciudad desde arriba.</div>
         <div class="plan-tags">
-          <span class="tag">~15€ entrada</span>
+          <span class="tag-price">~15€ entrada</span>
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-name">Tren Civitavecchia → Roma Termini</div>
         <div class="plan-desc">La opción más cómoda y barata. Salen trenes cada 30 min desde la estación de Civitavecchia, a 10 min a pie del puerto. Línea FL5, llegada a Roma Termini en ~1h 15min.</div>
         <div class="plan-tags">
-          <span class="tag">~5€ ida · ~10€ ida y vuelta</span>
+          <span class="tag-price">~5€ ida · ~10€ ida y vuelta</span>
           <span class="tag">Cada 30 min</span>
           <span class="tag">~1h 15min de trayecto</span>
         </div>
@@ -111,9 +111,9 @@ import Collapsible from '../components/Collapsible.astro';
       </div>
       <div class="plan-item">
         <div class="plan-name">Bus organizado desde el puerto</div>
-        <div class="plan-desc">Hay operadores que ofrecen bus directo Puerto → Roma (sin transbordos) por ~25–35€ ida y vuelta. Más caro que el tren pero sin cambios. Útil si se va con niños pequeños o mayores.</div>
+        <div class="plan-desc">Hay operadores que ofrecen bus directo Puerto → Roma (sin transbordos). Más caro que el tren pero sin cambios. Útil si se va con niños pequeños o mayores.</div>
         <div class="plan-tags">
-          <span class="tag">~25–35€ ida y vuelta</span>
+          <span class="tag-price">~25–35€ ida y vuelta</span>
           <span class="tag">Sin transbordos</span>
         </div>
       </div>
@@ -130,24 +130,24 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-desc">Una de las mejores trattorias romanas. Cocina tradicional con cacio e pepe, coda alla vaccinara y carciofi alla romana. Reserva imprescindible, es pequeño y muy solicitado.</div>
         <div class="plan-tags">
           <span class="tag">Trastevere</span>
-          <span class="tag">~25–35€/persona</span>
+          <span class="tag-price">~25–35€/persona</span>
           <span class="tag">Reserva necesaria</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Osteria dell'Angelo <a class="maps-link" href="https://maps.google.com/?q=Osteria+dell%27Angelo,+Roma" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Junto al Vaticano, cocina romana clásica y honesta. Famosa por sus bucatini all'amatriciana. Menú completo ~20€. Solo abre a mediodía de lunes a viernes.</div>
+        <div class="plan-desc">Junto al Vaticano, cocina romana clásica y honesta. Famosa por sus bucatini all'amatriciana. Solo abre a mediodía de lunes a viernes.</div>
         <div class="plan-tags">
           <span class="tag">Zona Vaticano</span>
-          <span class="tag">~20€ menú</span>
+          <span class="tag-price">~20€ menú</span>
         </div>
       </div>
       <div class="plan-item">
         <div class="plan-name">Supplì Roma <a class="maps-link" href="https://maps.google.com/?q=Suppl%C3%AC+Roma,+Trastevere" target="_blank">📍 Maps</a></div>
-        <div class="plan-desc">Para comer rápido y barato: los supplì son las croquetas de arroz romanas, fritas y con mozzarella dentro. ~2€ la pieza. Perfectas para seguir caminando sin parar.</div>
+        <div class="plan-desc">Para comer rápido y barato: los supplì son las croquetas de arroz romanas, fritas y con mozzarella dentro. Perfectas para seguir caminando sin parar.</div>
         <div class="plan-tags">
           <span class="tag">Street food</span>
-          <span class="tag">~2€/pieza</span>
+          <span class="tag-price">~2€/pieza</span>
         </div>
       </div>
     </div>
@@ -207,6 +207,15 @@ import Collapsible from '../components/Collapsible.astro';
     color: var(--color-gray-600);
     font-size: 0.75rem;
     font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+  .tag-price {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+    font-size: 0.75rem;
+    font-weight: 700;
     padding: 0.125rem 0.5rem;
     border-radius: 100px;
   }
