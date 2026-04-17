@@ -25,6 +25,7 @@ import Collapsible from '../components/Collapsible.astro';
           <span class="tag-price">~3€ reserva obligatoria</span>
           <span class="tag">Mejor a primera hora</span>
         </div>
+        <a class="btn-ticket" href="https://fontanaditrevi.roma.it/en" target="_blank">🎟️ Comprar entrada oficial</a>
       </div>
       <div class="plan-item">
         <div class="plan-name">Panteón de Agripa <a class="maps-link" href="https://maps.google.com/?q=Pantheon,+Roma" target="_blank">📍 Maps</a></div>
@@ -33,6 +34,7 @@ import Collapsible from '../components/Collapsible.astro';
           <span class="tag-price">~5€ entrada</span>
           <span class="tag">Reserva online</span>
         </div>
+        <a class="btn-ticket" href="https://www.pantheonroma.com/en/visit-the-pantheon/" target="_blank">🎟️ Comprar entrada oficial</a>
       </div>
       <div class="plan-item">
         <div class="plan-name">Piazza Navona <a class="maps-link" href="https://maps.google.com/?q=Piazza+Navona,+Roma" target="_blank">📍 Maps</a></div>
@@ -45,6 +47,7 @@ import Collapsible from '../components/Collapsible.astro';
           <span class="tag-price">~18€ Coliseo + Foro</span>
           <span class="tag">Reserva con semanas de antelación</span>
         </div>
+        <a class="btn-ticket" href="https://colosseo.it/en/opening-times-and-tickets/" target="_blank">🎟️ Comprar entrada oficial</a>
       </div>
       <div class="plan-item">
         <div class="plan-name">Barrio de Trastevere <a class="maps-link" href="https://maps.google.com/?q=Trastevere,+Roma" target="_blank">📍 Maps</a></div>
@@ -57,6 +60,7 @@ import Collapsible from '../components/Collapsible.astro';
           <span class="tag">Basílica gratis</span>
           <span class="tag-price">Museos ~20€ · Reserva obligatoria</span>
         </div>
+        <a class="btn-ticket" href="https://tickets.museivaticani.va" target="_blank">🎟️ Comprar entrada oficial</a>
       </div>
     </div>
     <div class="tip-box">
@@ -72,6 +76,7 @@ import Collapsible from '../components/Collapsible.astro';
         <div class="plan-tags">
           <span class="tag-price">~15€ entrada</span>
         </div>
+        <a class="btn-ticket" href="https://www.coopculture.it/en/products/castel-santangelo-ticket-for-individuals-up-to-9-people/" target="_blank">🎟️ Comprar entrada oficial</a>
       </div>
     </div>
   </Collapsible>
@@ -226,6 +231,19 @@ import Collapsible from '../components/Collapsible.astro';
     font-weight: 600;
     color: var(--color-teal);
     text-decoration: underline;
+  }
+  .btn-ticket {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    background: #0891b2;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.375rem 0.875rem;
+    border-radius: 100px;
+    text-decoration: none;
   }
   .tip-box {
     background: var(--color-sand);

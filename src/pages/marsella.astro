@@ -41,6 +41,7 @@ import Collapsible from '../components/Collapsible.astro';
           <span class="tag">Pasarela exterior gratis</span>
           <span class="tag-price">Entrada museo ~11€</span>
         </div>
+        <a class="btn-ticket" href="https://www.mucem.org/en/your-visit" target="_blank">🎟️ Comprar entrada oficial</a>
       </div>
       <div class="plan-item">
         <div class="plan-name">Calanques de Marsella <a class="maps-link" href="https://maps.google.com/?q=Calanques+de+Marseille" target="_blank">📍 Maps</a></div>
@@ -240,6 +241,19 @@ import Collapsible from '../components/Collapsible.astro';
     font-weight: 600;
     color: var(--color-teal);
     text-decoration: underline;
+  }
+  .btn-ticket {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    background: #0891b2;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.375rem 0.875rem;
+    border-radius: 100px;
+    text-decoration: none;
   }
   .tip-box {
     background: var(--color-sand);
