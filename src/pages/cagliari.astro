@@ -16,6 +16,177 @@ import Collapsible from '../components/Collapsible.astro';
     gradient="linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%)"
   />
 
+  <Collapsible title="Itinerario del día" emoji="📅">
+    <div class="timeline">
+
+      <div class="tl-step">
+        <div class="tl-time">07:00</div>
+        <div class="tl-dot tl-dot--anchor"></div>
+        <div class="tl-body">
+          <div class="tl-title">⚓ Desembarco en el puerto</div>
+          <div class="tl-desc">Puerto de Cagliari, terminal de cruceros.</div>
+        </div>
+      </div>
+
+      <div class="tl-transit">
+        <div class="tl-transit-line"></div>
+        <div class="tl-transit-label">
+          🚌 Shuttle gratuito Terminal → Via Roma · 10 min · Gratis
+          <a class="tl-maps" href="https://maps.google.com/maps/dir/Terminal+Crociere+Cagliari/Via+Roma,+Cagliari" target="_blank">📍 Ruta</a>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-time">07:10</div>
+        <div class="tl-dot tl-dot--sight"></div>
+        <div class="tl-body">
+          <div class="tl-title">Barrio de Marina <a class="tl-maps" href="https://maps.google.com/?q=Marina,+Cagliari" target="_blank">📍 Maps</a></div>
+          <div class="tl-desc">Paseo matutino por las callejuelas, ambiente tranquilo antes de que lleguen los turistas. Tiendas de productos locales y ambiente muy auténtico.</div>
+          <div class="tl-dur">~35 min</div>
+        </div>
+      </div>
+
+      <div class="tl-transit">
+        <div class="tl-transit-line"></div>
+        <div class="tl-transit-label">
+          🚶 A pie ~5 min → Piazza Yenne
+          <a class="tl-maps" href="https://maps.google.com/maps/dir/Marina,+Cagliari/Piazza+Yenne,+Cagliari" target="_blank">📍 Ruta</a>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-time">07:45</div>
+        <div class="tl-dot tl-dot--food"></div>
+        <div class="tl-body">
+          <div class="tl-title">☕ Desayuno en Piazza Yenne <a class="tl-maps" href="https://maps.google.com/?q=Piazza+Yenne,+Cagliari" target="_blank">📍 Maps</a></div>
+          <div class="tl-desc">Café con leche y brioche sardo o "pardula" (pastelito de queso fresco). Las terrazas abren desde las 7:00. Plaza animada con heladerías y bares.</div>
+          <div class="tl-dur">~30 min</div>
+        </div>
+      </div>
+
+      <div class="tl-transit">
+        <div class="tl-transit-line"></div>
+        <div class="tl-transit-label">
+          🚶 A pie ~2 min · Ascensor desde Piazza Yenne → Castello (gratis)
+          <a class="tl-maps" href="https://maps.google.com/maps/dir/Piazza+Yenne,+Cagliari/Bastione+di+Saint+Remy,+Cagliari" target="_blank">📍 Ruta</a>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-time">08:20</div>
+        <div class="tl-dot tl-dot--sight"></div>
+        <div class="tl-body">
+          <div class="tl-title">Bastione di Saint Remy + Castello <a class="tl-maps" href="https://maps.google.com/?q=Bastione+di+Saint+Remy,+Cagliari" target="_blank">📍 Maps</a></div>
+          <div class="tl-desc">La mejor terraza de Cagliari. Vistas panorámicas sobre el golfo y la ciudad. Desde aquí entra en el Barrio de Castello: calles medievales empedradas y la Catedral de Santa María (entrada gratuita).</div>
+          <div class="tl-dur">~1h 40min</div>
+        </div>
+      </div>
+
+      <div class="tl-transit">
+        <div class="tl-transit-line"></div>
+        <div class="tl-transit-label">
+          🚶 A pie ~5 min → punto de encuentro Free Tour (frente al Bastione)
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-time">10:00</div>
+        <div class="tl-dot tl-dot--tour"></div>
+        <div class="tl-body">
+          <div class="tl-title">🎙️ Free Tour Cagliari <a class="tl-maps" href="https://maps.google.com/?q=Bastione+di+Saint+Remy,+Cagliari" target="_blank">📍 Maps</a></div>
+          <div class="tl-desc">2 horas por el distrito histórico de Castello con guía local. Historia, comida y curiosidades. Punto de encuentro: frente al Bastione di Saint Remy. Reserva en freetourscagliari.com.</div>
+          <div class="tl-tags">
+            <span class="tl-tag-price">Adultos 11€ · Niños 6€</span>
+            <span class="tl-tag">10:00 – 12:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-transit">
+        <div class="tl-transit-line"></div>
+        <div class="tl-transit-label">
+          🚶 A pie ~8 min → Barrio de Marina
+          <a class="tl-maps" href="https://maps.google.com/maps/dir/Bastione+di+Saint+Remy,+Cagliari/Su+Cumbidu,+Cagliari" target="_blank">📍 Ruta</a>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-time">12:15</div>
+        <div class="tl-dot tl-dot--food"></div>
+        <div class="tl-body">
+          <div class="tl-title">🍽️ Comida en Su Cumbidu <a class="tl-maps" href="https://maps.google.com/?q=Su+Cumbidu,+Cagliari" target="_blank">📍 Maps</a></div>
+          <div class="tl-desc">Cocina sarda auténtica en el Barrio de Marina. Pide los malloreddus al ragú sardo o fregola con arselle (pasta con almejas). Reserva recomendada.</div>
+          <div class="tl-tags">
+            <span class="tl-tag-price">~20–30€/persona</span>
+            <span class="tl-tag">Barrio Marina</span>
+          </div>
+          <div class="tl-dur">~1h 15min</div>
+        </div>
+      </div>
+
+      <div class="tl-transit">
+        <div class="tl-transit-line"></div>
+        <div class="tl-transit-label">
+          🚶 A pie ~5 min → Piazza Matteotti · Bus PF dirección Poetto
+          <a class="tl-maps" href="https://maps.google.com/maps/dir/Piazza+Matteotti,+Cagliari/Spiaggia+del+Poetto,+Cagliari" target="_blank">📍 Ruta en bus</a>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-time">13:30</div>
+        <div class="tl-dot tl-dot--transport"></div>
+        <div class="tl-body">
+          <div class="tl-title">🚌 Bus PF → Playa de Poetto</div>
+          <div class="tl-desc">Sale desde Piazza Matteotti. Billete en estancos o app CTM antes de subir. El bus para justo en la orilla de la playa.</div>
+          <div class="tl-tags">
+            <span class="tl-tag-price">~1,30€/trayecto</span>
+            <span class="tl-tag">~20 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-time">13:50</div>
+        <div class="tl-dot tl-dot--beach"></div>
+        <div class="tl-body">
+          <div class="tl-title">🏖️ Playa de Poetto <a class="tl-maps" href="https://maps.google.com/?q=Spiaggia+del+Poetto,+Cagliari" target="_blank">📍 Maps</a></div>
+          <div class="tl-desc">8 km de arena blanca y agua turquesa. Si el tiempo acompaña, baño rápido. A 5 min andando por la orilla está el Parque de Molentargius — en mayo se ven flamencos rosados en los estanques.</div>
+          <div class="tl-dur">~1h 20min</div>
+        </div>
+      </div>
+
+      <div class="tl-transit">
+        <div class="tl-transit-line"></div>
+        <div class="tl-transit-label">
+          🚌 Bus PF de vuelta → Piazza Matteotti · ~20 min · ~1,30€
+          <a class="tl-maps" href="https://maps.google.com/maps/dir/Spiaggia+del+Poetto,+Cagliari/Piazza+Matteotti,+Cagliari" target="_blank">📍 Ruta</a>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-time">15:10</div>
+        <div class="tl-dot tl-dot--transport"></div>
+        <div class="tl-body">
+          <div class="tl-title">🚶 Regreso al puerto</div>
+          <div class="tl-desc">Desde Via Roma el shuttle gratuito de la terminal o 10 min a pie hasta el barco. Llegas con 50 minutos de margen antes de la salida.</div>
+        </div>
+      </div>
+
+      <div class="tl-step tl-step--last">
+        <div class="tl-time">15:30</div>
+        <div class="tl-dot tl-dot--end"></div>
+        <div class="tl-body">
+          <div class="tl-title">✅ A bordo — salida 16:00</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="tip-box">
+      <strong>Tip:</strong> Si no te apetece la playa, usa esa última hora para comprar bottarga, mirto o pecorino en el Mercado de San Benedetto, el más grande de Cerdeña.
+      <a class="tl-maps" href="https://maps.google.com/?q=Mercato+di+San+Benedetto,+Cagliari" target="_blank" style="margin-left:0.25rem">📍 Maps</a>
+    </div>
+  </Collapsible>
+
   <Collapsible title="Planes generales" emoji="🗺️">
     <div class="plan-list">
       <div class="plan-item">
@@ -242,6 +413,146 @@ import Collapsible from '../components/Collapsible.astro';
 
   .tip-box strong {
     color: var(--color-navy);
+  }
+
+  /* ── Timeline ── */
+  .timeline {
+    padding-top: 0.25rem;
+  }
+
+  .tl-step {
+    display: grid;
+    grid-template-columns: 3rem 0.75rem 1fr;
+    gap: 0 0.5rem;
+    align-items: start;
+    padding-bottom: 0;
+  }
+
+  .tl-step--last {
+    padding-bottom: 0;
+  }
+
+  .tl-time {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    padding-top: 0.15rem;
+    text-align: right;
+    line-height: 1.2;
+  }
+
+  .tl-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    margin-top: 0.175rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tl-dot--anchor  { background: #94a3b8; border: 2px solid #64748b; }
+  .tl-dot--sight   { background: #0891b2; border: 2px solid #0e7490; }
+  .tl-dot--food    { background: #f59e0b; border: 2px solid #d97706; }
+  .tl-dot--tour    { background: #8b5cf6; border: 2px solid #7c3aed; }
+  .tl-dot--transport { background: #94a3b8; border: 2px solid #64748b; }
+  .tl-dot--beach   { background: #06b6d4; border: 2px solid #0891b2; }
+  .tl-dot--end     { background: #22c55e; border: 2px solid #16a34a; }
+
+  .tl-body {
+    padding-bottom: 0.25rem;
+  }
+
+  .tl-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    line-height: 1.3;
+  }
+
+  .tl-desc {
+    font-size: 0.8rem;
+    color: var(--color-gray-600);
+    line-height: 1.5;
+    margin-top: 0.15rem;
+  }
+
+  .tl-dur {
+    font-size: 0.7rem;
+    color: var(--color-gray-600);
+    font-style: italic;
+    margin-top: 0.2rem;
+  }
+
+  .tl-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.3rem;
+  }
+
+  .tl-tag {
+    background: var(--color-gray-100);
+    color: var(--color-gray-600);
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.1rem 0.45rem;
+    border-radius: 100px;
+  }
+
+  .tl-tag-price {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #6ee7b7;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.1rem 0.45rem;
+    border-radius: 100px;
+  }
+
+  .tl-transit {
+    display: grid;
+    grid-template-columns: 3rem 0.75rem 1fr;
+    gap: 0 0.5rem;
+    align-items: stretch;
+    padding: 0.1rem 0;
+  }
+
+  .tl-transit-line {
+    grid-column: 2;
+    width: 2px;
+    background: #e2e8f0;
+    margin: 0 auto;
+    min-height: 2rem;
+  }
+
+  .tl-transit-label {
+    grid-column: 3;
+    font-size: 0.72rem;
+    color: #64748b;
+    padding: 0.25rem 0;
+    line-height: 1.4;
+    align-self: center;
+  }
+
+  .tl-maps {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    background: #e0f7fd;
+    padding: 0.05rem 0.35rem;
+    border-radius: 4px;
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  /* vertical connector between steps */
+  .tl-step + .tl-transit .tl-transit-line,
+  .tl-transit + .tl-step .tl-dot {
+    /* line flows naturally */
   }
 
   .maps-link {
